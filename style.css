@@ -1,14 +1,25 @@
-body {background-color:black;}
-.header {background-color:rgb(209, 180, 15);
-color:black;
-padding: 20px;}
-h2 {color:white}
-p {color:white}
+body {
+  background-color: black;
+}
+.header {
+  background-color: rgb(209, 180, 15);
+  color: black;
+  display:flex;
+  justify-content:space-between;
+}
+h2 {
+  color: white;
+  margin: 40px;
+}
+p {
+  color: white;
+  margin: 40px;
+}
 
 .video-container {
-    display:flex;
-    justify-content:center;
-    overflow:hidden;
-    width:100%;
-    height:20vh;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content:center;
 }
