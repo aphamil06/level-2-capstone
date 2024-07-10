@@ -2,41 +2,20 @@
 
 ## About
 
-This project is about my photography business.  It showcases my work and allows potential clients to view my work.   It also explains a little about the business and services offered.
+This project is about my photography business. It showcases my work and allows potential clients to view my work. It also explains a little about the business and services offered.
 
 ## Built with
 
-
-
-
-
-
-
-
-
-
 ##Roadmap
 
- 
+## Wireframe
 
-
- ## Wireframe
 ![wireframe of index.html](wireframe-index.png)
 ![wireframe of gallery.html](wireframe-gallery.png)
 ![wireframe of about.html](wireframe-about.png)
 
+## Contact
 
+Alexander Hamilton II aphamil06@gmail.com
 
-
- ## Contact
- Alexander Hamilton II aphamil06@gmail.com
-
-
- ## Acknowledgements
-
- 
-
-
-
-
-
+## Acknowledgements
