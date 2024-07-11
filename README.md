@@ -6,13 +6,18 @@ This project is about my photography business. It showcases my work and allows p
 
 ## Built with
 
-##Roadmap
+## Roadmap
+- []
+- []
+- []
+- []
+
 
 ## Wireframe
 
-![wireframe of index.html](wireframe-index.png)
-![wireframe of gallery.html](wireframe-gallery.png)
-![wireframe of about.html](wireframe-about.png)
+![wireframe of index.html](img/wireframe-index.png)
+![wireframe of gallery.html](img/wireframe-gallery.png)
+![wireframe of about.html](img/wireframe-about.png)
 
 ## Contact
 

@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  overflow-x:hidden
 }
 .header {
   background-color: rgb(209, 180, 15);
@@ -13,7 +14,6 @@ h2 {
 }
 p {
   color: white;
-  margin: 40px;
 }
 
 .video-container {
@@ -25,4 +25,9 @@ p {
 }
 .photoFrame {
   border: groove 10px gold;
+  padding:10px;
+  background-color:white
+}
+.list-group {
+    width:100%;
 }
