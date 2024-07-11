@@ -31,4 +31,5 @@ p {
 .list-group {
     width:100%;
 }
-.container img{width:400px}
+.galleryContainer {width:90%;}
+.galleryContainer img{width:350px;}
