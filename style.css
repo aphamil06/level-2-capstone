@@ -32,4 +32,16 @@ p {
     width:100%;
 }
 .galleryContainer {width:90%;}
-.galleryContainer img{width:350px;}
+.galleryContainer img{width:350px; margin:20px;}
+.testamonyPictures img{width:90%;
+margin-top:10px;
+}
+.fade-in-card{
+  opacity:50%;
+  transition:opacity 1s;
+}
+.fade-in-card:hover {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
