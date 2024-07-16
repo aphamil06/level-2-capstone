@@ -14,9 +14,9 @@
   </head>
   <body>
     <header class="header text-center">
-      <img src="img/ufxlogo.png" height="100px" style="border: solid 1px" />
+      <img src="ufxlogo.png" height="100px" style="border: solid 1px" />
       <h1>UrbanFX Photography</h1>
-      <button type="button" class="btn btn-success">Book Now</button>
+      <button type="button" class="btn btn-success" id="bookNow">Book Now</button>
     </header>
     <nav class="navbar bg-body-tertiary">
       <form class="container-fluid justify-content-center">
@@ -55,7 +55,7 @@
     </div>
     <div class="container text-center">
       <h2>Welcome</h2>
-      <p>
+      <p style="background:rgba(0, 0, 0, 0.4)">
         At UrbanFX Photography, we believe in capturing the essence of every
         moment with creativity and precision. As a dynamic sibling duo,
         Alexander and Alyssa Hamilton are passionate about transforming your
@@ -84,7 +84,7 @@
             <div class="card-body">
               <h5 class="card-title">Headshots</h5>
               <p class="card-text">View Headshots</p>
-              <a href="#" class="btn btn-primary">View Headshots</a>
+              <a href="gallery.html#headshots" class="btn btn-primary">View Headshots</a>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
             <div class="card-body">
               <h5 class="card-title">Portrait</h5>
               <p class="card-text">View Portraits</p>
-              <a href="#" class="btn btn-primary">View Portraits</a>
+              <a href="gallery.html#portrait" class="btn btn-primary">View Portraits</a>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
             <div class="card-body">
               <h5 class="card-title">Prom</h5>
               <p class="card-text">Input text here</p>
-              <a href="#" class="btn btn-primary">View Proms</a>
+              <a href="gallery.html#prom" class="btn btn-primary">View Proms</a>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
             <div class="card-body">
               <h5 class="card-title">Senior</h5>
               <p class="card-text">Input text here</p>
-              <a href="#" class="btn btn-primary">View Seniors</a>
+              <a href="gallery.html#senior" class="btn btn-primary">View Seniors</a>
             </div>
           </div>
         </div>
@@ -138,24 +138,24 @@
             <div class="card-body">
               <h5 class="card-title">Family</h5>
               <p class="card-text">Input text here</p>
-              <a href="#" class="btn btn-primary">View Family</a>
+              <a href="gallery.html#family" class="btn btn-primary">View Family</a>
             </div>
           </div>
         </div>
         <div class="col" style="margin: 5px">
           <div class="card text-center col" style="width: 22rem">
-            <img src="img/event.jpg" class="card-img-top photoFrame" alt="#" />
+            <img src="img/branding1.jpeg" class="card-img-top photoFrame" alt="#" />
             <div class="card-body">
-              <h5 class="card-title">Event</h5>
+              <h5 class="card-title">Branding</h5>
               <p class="card-text">View Event</p>
-              <a href="#" class="btn btn-primary">View Event</a>
+              <a href="gallery.html#branding" class="btn btn-primary">View Event</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="text-center" style="margin-top: 200px; margin-bottom: 100px">
-      <h2>Testimonials</h2>
+      <h2>Feedback</h2>
     </div>
     <div class="container testamonyPictures fade-in-card">
       <div class="col text-center">
@@ -179,11 +179,13 @@
         </div>
       </div>
     </div>
+  
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
