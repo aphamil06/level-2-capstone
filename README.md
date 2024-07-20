@@ -7,11 +7,11 @@ This project is about my photography business. It showcases my work and allows p
 ## Built with
 
 ## Roadmap
-- []
-- []
-- []
-- []
 
+- []
+- []
+- []
+- []
 
 ## Wireframe
 
