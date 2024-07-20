@@ -41,7 +41,7 @@ function enterPassword(userInput, correctAnswer) {
 }
 
 function goNow() {
-  let result = enterPassword(prompt("Please enter the password"), password);
+  let result = enterPassword(prompt("Please enter the password.(admin)"), password);
   if (result === "success") {
     alert("Successful");
     window.location.href = "gallery.html";
