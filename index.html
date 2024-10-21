@@ -11,6 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="
+https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js
+"></script>
   </head>
   <body>
     <header class="header text-center">
@@ -61,9 +64,16 @@
     </div>
     <div class="container text-center">
       <h2>Welcome</h2>
-      <img
-        src="https://res.cloudinary.com/dqu9ruxzf/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1721514276/Untitled_design_zlnxkb.png"
+      <img usemap="#camera"
+        src="img/ai-image.png"
       />
+      <map name="camera">
+        <area
+        title="click-the-image"
+        coords="390,532, 461,588, 498,604, 504,640, 556,648, 616,731, 556,848, 211,832, 211,623, 325,536"
+        shape="poly"
+        href="https://www.bestbuy.com/site/sony-alpha-a7-iii-mirrorless-video-camera-with-fe-28-70-mm-f3-5-5-6-oss-lens-black/6213100.p?skuId=6213100&extStoreId=1080&utm_source=feed&ref=212&loc=18182031001&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8fqokQUNJ_G0x3-xAlMj9WXwk3ZigW7FwoDoJWgt9VmWL6vCjCLBAaArDOEALw_wcB&gclsrc=aw.ds"/>
+      </map>
       <p style="background: rgba(0, 0, 0, 0.4)">
         At UrbanFX Photography, we believe in capturing the essence of every
         moment with creativity and precision. As a dynamic sibling duo,
@@ -209,5 +219,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script>
+      imageMapResize();
+    </script>
   </body>
 </html>
