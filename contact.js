@@ -15,3 +15,17 @@ function processForm(event){
     output("The form has been processed")
 }
 
+function processAppointment(event){
+    event.preventDefault();
+    debugger;
+    const form = event.target;
+    const name = form[0];
+    const nameValue = name.value;
+    const date = form[1];
+    const dateValue =date.value;
+    const phone = form[2];
+    const phoneValue = phone.value;
+
+    output(`Hi ${nameValue}, the date and time for your scheduled phone appointment is ${dateValue}.  We will call you at ${phoneValue}.  We look forward to speaking with you then.`)
+
+}
