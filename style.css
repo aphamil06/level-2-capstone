@@ -1,6 +1,6 @@
 body { background-color:black;
    background-image: url(background-image.jpg);
-  overflow-x:hidden
+  overflow-x:hidden; 
 }
 .header {
   background-color: rgba(185, 136, 0, 0.5);
@@ -44,4 +44,5 @@ margin-top:10px;
   opacity: 100%;
   transition: opacity 1s;
 }
+label {color:white}
 

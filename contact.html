@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="contact.js"></script>
   </head>
   <body>
     <header class="header text-center">
@@ -42,16 +43,36 @@
         </a>
       </form>
     </nav>
-    <form action="https://formsubmit.co/aphamil06@gmail.com" method="POST">
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input
-        type="hidden"
-        name="_next"
-        value="https://ufxphotos.com/thanks.html"
-      />
-      <input type="text" name="name" required />
-      <input type="email" name="email" required />
-      <button type="submit">Send</button>
+    <div>
+   <form onsubmit= "processForm(event)">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" placeholder="Full Name" required>
+    <br>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Email" required>
+    <br>
+    <button type="submit">submit</button>
+    
     </form>
+    
+    <div>
+    <h3 style="color:white; padding-top:50px;"></u>Schedule a Phone Appointment</h3>
+
+    <form onsubmit="processAppointment(event)">
+      <label for="name">Name</label>
+    <input id="name" type="text" name="name" placeholder="Full Name" required>
+    <br>
+      <label for="date"> Date </label>
+      <input id="date" type="datetime-local" name="date" required>
+      <br>
+      <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" name="phone" Placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <button>Submit</button>
+    </form>
+  </div>
+    <div id="myOutput" style="color:white">
+
+    </div>
+ 
   </body>
 </html>
