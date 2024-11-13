@@ -1,0 +1,77 @@
+$whiteText: white;
+$headerBackground: rgba(185, 136, 0, 0.5);
+$bodyBackground: black;
+$photoBackground: white;
+$photoBorder: groove 10px rgb(185, 136, 0);
+
+@mixin header {
+  background-color: $headerBackground;
+  color: $whiteText;
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin videoContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin photoFrame {
+  border: $photoBorder;
+  padding: 10px;
+  background-color: $photoBackground;
+}
+
+@mixin imgContainer {
+  width: 300px;
+  margin: 20px;
+}
+.testamonyPictures img {
+  width: 90%;
+  margin-top: 10px;
+}
+
+@mixin fadeIn {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+body {
+  background-color: $bodyBackground;
+  background-image: url(background-image.jpg);
+  overflow-x: hidden;
+  h2 {
+    color: $whiteText;
+    margin: 40px;
+  }
+
+  p {
+    color: $whiteText;
+  }
+  .header {
+    @include header;
+  }
+}
+
+.video-container {
+  @include videoContainer;
+}
+.photoFrame {
+  @include photoframe;
+}
+.list-group {
+  width: 100%;
+}
+
+.container img {
+  @include imgContainer;
+}
+.fade-in-card:hover {
+  @include fadeIn;
+}
+label {
+  color: $whiteText;
+}

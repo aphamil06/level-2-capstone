@@ -50,6 +50,7 @@ function goNow() {
     window.location.href = "gallery.html";
   } else {
     alert("Wrong Password.  Please Try Again");
+      
   }
 }
 galleryButton.onclick = goNow;

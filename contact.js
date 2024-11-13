@@ -26,6 +26,6 @@ function processAppointment(event){
     const phone = form[2];
     const phoneValue = phone.value;
 
-    output(`Hi ${nameValue}, the date and time for your scheduled phone appointment is ${dateValue}.  We will call you at ${phoneValue}.  We look forward to speaking with you then.`)
+    output(`<br> Hi ${nameValue}, Your appointment has been processed. The date and time for your scheduled phone appointment is ${dateValue}.  We will call you at ${phoneValue}.  We look forward to speaking with you then.`)
 
 }
