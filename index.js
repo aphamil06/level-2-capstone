@@ -10,27 +10,6 @@ function redirect() {
 }
 bookNow.onclick = redirect;
 
-/*function goToGallery() {
-    let password = "test";
-    let userInput = prompt("Please enter the Password");
-    let result;
-  if (password === userInput) {
-    result = "Success";}
-    else {
-        result = "Please Try Again";
-    }
-    /*console.log(result);
-    return result;
-}
-
-function check () {
-    goToGallery();
-    if (goToGallery === "Success") {
-        window.location.href = "gallery.html";
-    }
-}
-galleryButton.onclick = check;*/
-
 let password = "admin";
 function enterPassword(userInput, correctAnswer) {
   if (userInput === correctAnswer) {
@@ -49,8 +28,9 @@ function goNow() {
     alert("Successful");
     window.location.href = "gallery.html";
   } else {
-    alert("Wrong Password.  Please Try Again");
-      
+    bsAlert.innerHTML += (`<div class="alert alert-warning" role="alert">
+  Wrong password, try again.
+</div>`);
   }
 }
 galleryButton.onclick = goNow;
