@@ -12,7 +12,7 @@ function processForm(event){
     const value1 = input1.value
     output(`Your Name is ${value} <br>`);
     output(`Your Email Address is ${value1}<br>`);
-    output("The form has been processed")
+    output("The form has been processed");
 }
 
 function processAppointment(event){
