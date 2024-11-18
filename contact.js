@@ -7,12 +7,17 @@ function processForm(event){
     event.preventDefault();
     const form = event.target;
     const input = form[0];
-    const input1 = form[1]
-    const value = input.value
-    const value1 = input1.value
+    const input1 = form[1];
+    const value = input.value;
+    const value1 = input1.value;
     output(`Your Name is ${value} <br>`);
     output(`Your Email Address is ${value1}<br>`);
-    output("The form has been processed")
+    setTimeout(serverSimulation,5000);
+    output("Your form is being processed...<br>");
+}
+
+function serverSimulation(){
+output("Your form has successfully been processed. ");
 }
 
 function processAppointment(event){
@@ -25,7 +30,7 @@ function processAppointment(event){
     const dateValue =date.value;
     const phone = form[2];
     const phoneValue = phone.value;
-
-    output(`<br> Hi ${nameValue}, Your appointment has been processed. The date and time for your scheduled phone appointment is ${dateValue}.  We will call you at ${phoneValue}.  We look forward to speaking with you then.`)
-
+    setTimeout(serverSimulation,5000);
+    output(`<br> Hi ${nameValue}, the date and time for your scheduled phone appointment will be ${dateValue}.  We will call you at ${phoneValue}.  We look forward to speaking with you then. Please wait while we finish processing your appointment....<br>`);
 }
+
