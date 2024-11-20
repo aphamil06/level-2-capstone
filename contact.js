@@ -6,7 +6,7 @@ myOutput1.innerHTML += (message1);
 }
 
 
-function processForm(resolve){
+function handleSubmit(resolve){
     event.preventDefault();
     const form = event.target;
     const input = form[0];
@@ -29,7 +29,7 @@ function processForm(resolve){
 }
 
 function makePromise1(){
-    const promise = new Promise(processForm);
+    const promise = new Promise(handleSubmit);
     promise.then(getMessage);
 }
 
@@ -40,7 +40,7 @@ function getMessage(resolveMessage){
 
 
 
-function processAppointment(resolve){
+function handleSubmit2(resolve){
     event.preventDefault();
     debugger;
     const form = event.target;
@@ -64,7 +64,7 @@ function processAppointment(resolve){
 }
 
 function makePromise(){
-    const promise = new Promise(processAppointment);
+    const promise = new Promise(handleSubmit2);
     promise.then(getMessage1);
 }
 
