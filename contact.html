@@ -44,7 +44,7 @@
       </form>
     </nav>
     <div>
-   <form onsubmit= "processForm(event)">
+   <form onsubmit= "makePromise1()">
     <label for="name">Name</label>
     <input id="name" type="text" name="name" placeholder="Full Name" required>
     <br>
@@ -52,13 +52,13 @@
     <input id="email" type="email" name="email" placeholder="Email" required>
     <br>
     <button type="submit">submit</button>
-    
     </form>
+    <div id="myOutput1"></div>
     
     <div>
     <h3 style="color:white; padding-top:50px;"></u>Schedule a Phone Appointment</h3>
 
-    <form onsubmit="processAppointment(event)">
+    <form onsubmit="makePromise()">
       <label for="name">Name</label>
     <input id="name" type="text" name="name" placeholder="Full Name" required>
     <br>

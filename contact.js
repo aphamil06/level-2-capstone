@@ -1,9 +1,12 @@
 function output(message){
 myOutput.innerHTML += (message);
 }
+function output1(message1){
+myOutput1.innerHTML += (message1);
+}
 
 
-function processForm(event){
+function processForm(resolve){
     event.preventDefault();
     const form = event.target;
     const input = form[0];
@@ -15,18 +18,29 @@ function processForm(event){
         email: value1,
     };
 
-    output(`Your Name is ${value} <br>`);
-    output(`Your Email Address is ${value1}<br>`);
+    
     setTimeout(serverSimulation,5000);
-    output("Your form is being processed...<br>");
-    output (JSON.stringify(user));
+    output1("Your form is being processed...<br>");
+
+    function serverSimulation(){
+        resolve(`Your information has been processed.  Your Name is ${value} <br>
+    Your Email Address is ${value1}<br>`);
+}
 }
 
-function serverSimulation(){
-output("<br>Your form has successfully been processed. ");
+function makePromise1(){
+    const promise = new Promise(processForm);
+    promise.then(getMessage);
 }
 
-function processAppointment(event){
+function getMessage(resolveMessage){
+    output1(resolveMessage);
+}
+
+
+
+
+function processAppointment(resolve){
     event.preventDefault();
     debugger;
     const form = event.target;
@@ -41,8 +55,19 @@ function processAppointment(event){
         date: dateValue,
         Phone: phoneValue,
     };
-    setTimeout(serverSimulation,5000);
-    output(`<br> Hi ${nameValue}, the date and time for your scheduled phone appointment will be ${dateValue}. <br> We will call you at ${phoneValue}. <br> We look forward to speaking with you then.<br> Please wait while we finish processing your appointment....<br>`);
-    output(JSON.stringify (user));
+    setTimeout(serverSimulation1,5000);
+    output("Please wait while we process your appointment. <br>")
+    
+    function serverSimulation1(){
+        resolve(`Hi ${nameValue} <br> Your appointment has been successfully processed. <br> The date and time for your scheduled phone appointment will be ${dateValue}. <br> We will call you at ${phoneValue}. <br> We look forward to speaking with you then.<br> <br>`)
+}
 }
 
+function makePromise(){
+    const promise = new Promise(processAppointment);
+    promise.then(getMessage1);
+}
+
+function getMessage1(resolveMessage){
+    output(resolveMessage);
+}
