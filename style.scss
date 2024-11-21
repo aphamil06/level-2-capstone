@@ -47,6 +47,10 @@ body {
     color: $whiteText;
     margin: 40px;
   }
+  h1 {
+    color: $whiteText;
+    margin: 40px;
+  }
 
   p {
     color: $whiteText;
@@ -54,13 +58,19 @@ body {
   .header {
     @include header;
   }
+  ol {
+    text-align:center;
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .video-container {
   @include videoContainer;
 }
 .photoFrame {
-  @include photoframe;
+  @include photoFrame;
 }
 .list-group {
   width: 100%;

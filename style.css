@@ -1,9 +1,18 @@
+.testamonyPictures img {
+  width: 90%;
+  margin-top: 10px;
+}
+
 body {
   background-color: black;
   background-image: url(background-image.jpg);
   overflow-x: hidden;
 }
 body h2 {
+  color: white;
+  margin: 40px;
+}
+body h1 {
   color: white;
   margin: 40px;
 }
@@ -16,6 +25,12 @@ body .header {
   display: flex;
   justify-content: space-between;
 }
+body ol {
+  text-align: center;
+  list-style-position: inside;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .video-container {
   overflow: hidden;
@@ -23,6 +38,12 @@ body .header {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.photoFrame {
+  border: groove 10px rgb(185, 136, 0);
+  padding: 10px;
+  background-color: white;
 }
 
 .list-group {
@@ -34,16 +55,6 @@ body .header {
   margin: 20px;
 }
 
-.testamonyPictures img {
-  width: 90%;
-  margin-top: 10px;
-}
-
-.fade-in-card {
-  opacity: 0.5;
-  transition: opacity 1s;
-}
-
 .fade-in-card:hover {
   opacity: 1;
   transition: opacity 1s;
@@ -51,4 +62,4 @@ body .header {
 
 label {
   color: white;
-}
+}/*# sourceMappingURL=style.css.map */

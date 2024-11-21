@@ -1,5 +1,5 @@
-function output(message){
-myOutput.innerHTML += (message);
+function output(message3){
+myOutput.innerHTML += (message3);
 }
 function output1(message1){
 myOutput1.innerHTML += (message1);
@@ -40,7 +40,7 @@ function getMessage(resolveMessage){
 
 
 
-function handleSubmit2(resolve){
+function handleSubmit2(event){
     event.preventDefault();
     debugger;
     const form = event.target;
@@ -55,19 +55,34 @@ function handleSubmit2(resolve){
         date: dateValue,
         Phone: phoneValue,
     };
-    setTimeout(serverSimulation1,5000);
-    output("Please wait while we process your appointment. <br>")
+    output("Please wait while we process your appointment. <br>");
+    const promise = new Promise(getServerResponse);
+    promise.then(parseResponse);
+}
+
     
-    function serverSimulation1(){
-        resolve(`Hi ${nameValue} <br> Your appointment has been successfully processed. <br> The date and time for your scheduled phone appointment will be ${dateValue}. <br> We will call you at ${phoneValue}. <br> We look forward to speaking with you then.<br> <br>`)
+    
+    function getServerResponse(resolve){
+        debugger;
+
+        setTimeout(activateResolve,  5000);
+
+        
+    function activateResolve(){
+        debugger;
+
+        const response = {
+            message: "Your appointment has been successfully processed <br> <br>"
+        };
+        const resolveValue = JSON.stringify(response);
+        resolve(resolveValue);
 }
 }
 
-function makePromise(){
-    const promise = new Promise(handleSubmit2);
-    promise.then(getMessage1);
-}
 
-function getMessage1(resolveMessage){
-    output(resolveMessage);
+function parseResponse(resolveValue){
+    debugger;
+    const response = JSON.parse(resolveValue);
+    const message = response.message;
+    output(message);
 }
