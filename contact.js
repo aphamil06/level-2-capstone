@@ -5,6 +5,28 @@ function output1(message1){
 myOutput1.innerHTML = (message1);
 }
 
+let attempts = 0; 
+let isRedirecting = true; 
+
+function redirect() {
+  attempts++; 
+  
+  let answer = prompt("Would you like to book a shoot Now?");
+  
+  if (answer.toLowerCase() === "yes") {
+    alert(`Please complete the form to begin the booking process. This is attempt number ${attempts}.`);
+    if (isRedirecting) { 
+      window.location.href = "contact.html";
+    }
+  } else {
+    alert(`Feel free to browse our gallery. This is attempt number ${attempts}.`);
+    if (isRedirecting) {
+      window.location.href = "gallery.html";
+    }
+  }
+}
+
+
 
 function handleSubmit(resolve){
     event.preventDefault();

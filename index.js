@@ -15,16 +15,27 @@ function viewServices(){
 }
 
 
+let attempts = 0; 
+let isRedirecting = true; 
+
 function redirect() {
+  attempts++; 
+  
   let answer = prompt("Would you like to book a shoot Now?");
+  
   if (answer.toLowerCase() === "yes") {
-    alert("Please complete the form to begin the booking process");
-    window.location.href = "contact.html";
+    alert(`Please complete the form to begin the booking process. This is attempt number ${attempts}.`);
+    if (isRedirecting) { 
+      window.location.href = "contact.html";
+    }
   } else {
-    alert("Feel free to browse our gallery");
-    window.location.href = "gallery.html";
+    alert(`Feel free to browse our gallery. This is attempt number ${attempts}.`);
+    if (isRedirecting) {
+      window.location.href = "gallery.html";
+    }
   }
 }
+
 
 
 
