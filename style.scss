@@ -3,6 +3,7 @@ $headerBackground: rgba(185, 136, 0, 0.5);
 $bodyBackground: black;
 $photoBackground: white;
 $photoBorder: groove 10px rgb(185, 136, 0);
+$opacityHalf: 0.5;
 
 @mixin header {
   background-color: $headerBackground;
@@ -64,6 +65,7 @@ body {
     margin: 0 auto;
     padding: 0;
   }
+ 
 }
 
 .video-container {
@@ -76,7 +78,7 @@ body {
   width: 100%;
 }
 
-.container img {
+.container img {opacity:$opacityHalf;
   @include imgContainer;
 }
 .fade-in-card:hover {

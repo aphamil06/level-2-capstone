@@ -51,6 +51,7 @@ body ol {
 }
 
 .container img {
+  opacity: 0.5;
   width: 300px;
   margin: 20px;
 }
