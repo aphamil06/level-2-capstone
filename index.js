@@ -2,7 +2,17 @@ function output3(message){
   debugger;
 outputTag.innerHTML = message;
 }
+let services = [
+  "headshots", "portrait", "prom", "senior", "family", "branding"
+];
 
+function viewServices(){
+  for (let i =0; i<services.length; i++){
+    servicesTag.innerHTML += (`<p>${services[i]} <a href="gallery.html#${services[i]}">${services[i]}</a></p>`);
+    
+
+  }
+}
 
 
 function redirect() {
