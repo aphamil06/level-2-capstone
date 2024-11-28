@@ -11,6 +11,21 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Internal CSS for buttons */
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: darkblue;
+      }
+    </style>
     <script src="index.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js
@@ -32,29 +47,18 @@ imageMapResize();
       <button type="button" class="btn btn-success" onclick="redirect()">
         Book Now
       </button>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" aria-current="page" class="nav-link active" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a  class="nav-link"  href="about.html">About</a>
-                </li>
-                <li class="nav-item"  >
-                  <a class="nav-link" id="galleryLink" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="contact.html" aria-disabled="true">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contct</a>
+      </nav>
     </header>
     <main>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Hello!!!</strong> Thanks for visiting our page!!!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
     <div></div>
     <div class="video-container" style="border: groove grey 20px">
       <video
@@ -226,6 +230,7 @@ imageMapResize();
         </div>
       </div>
     </div>
+    <section>
     <div class="text-center">
     <div>
       <h2>Would you like to try some trivia?</h2>
@@ -253,9 +258,11 @@ imageMapResize();
    
     </div>
     </div>
+    </section>
 
 </main>
    <footer>
-    <p class="text-center">Made at Codex Academy</p></footer> 
+    <p class="text-center">Alexander Hamilton II</p>
+  </footer> 
   </body>
 </html>

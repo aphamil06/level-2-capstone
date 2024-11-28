@@ -1,6 +1,6 @@
-function output(message){
+function output3(message){
   debugger;
-  outputTag.innerHTML = message;
+outputTag.innerHTML = message;
 }
 
 
@@ -49,7 +49,7 @@ function handleClick(event) {
       </ol>
       <button onclick="showAnswer()">Show Correct Answer</button>
       </div>`;
-      output(trivia);
+      output3(trivia);
   }
 
       function showAnswer(){

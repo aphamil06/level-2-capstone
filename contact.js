@@ -1,8 +1,8 @@
 function output(message3){
-myOutput.innerHTML += (message3);
+myOutput.innerHTML = (message3);
 }
 function output1(message1){
-myOutput1.innerHTML += (message1);
+myOutput1.innerHTML = (message1);
 }
 
 
@@ -19,23 +19,40 @@ function handleSubmit(resolve){
     };
 
     
-    setTimeout(serverSimulation,5000);
-    output1("Your form is being processed...<br>");
-
-    function serverSimulation(){
-        resolve(`Your information has been processed.  Your Name is ${value} <br>
-    Your Email Address is ${value1}<br>`);
-}
-}
-
-function makePromise1(){
-    const promise = new Promise(handleSubmit);
-    promise.then(getMessage);
-}
-
-function getMessage(resolveMessage){
-    output1(resolveMessage);
-}
+    output1(`<p>Hi ${user.name}. Please wait while we process your information. Once processed, we'll send your login credentials to ${user.email}.<br><div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div><br></p>`);
+          const promise = new Promise(getServerResponse1);
+          promise.then(parseResponse1);
+      }
+      
+          
+          
+          function getServerResponse1(resolve){
+              debugger;
+      
+              setTimeout(activateResolve1,  5000);
+      
+              
+          function activateResolve1(){
+              debugger;
+      
+              const response = {
+                  message: "<p>Your appointment has been successfully processed <br> <br></p>"
+              };
+              const resolveValue = JSON.stringify(response);
+              resolve(resolveValue);
+      }
+      }
+      
+      
+      function parseResponse1(resolveValue){
+          debugger;
+          const response = JSON.parse(resolveValue);
+          const message = response.message;
+          output1(message);
+      }
+      
 
 
 
@@ -55,7 +72,9 @@ function handleSubmit2(event){
         date: dateValue,
         Phone: phoneValue,
     };
-    output("Please wait while we process your appointment. <br>");
+    output(`Hi ${nameValue}. Please wait while we process your appointment. Once processed, we'll call you on ${dateValue} at ${phoneValue}<br><div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div><br>`);
     const promise = new Promise(getServerResponse);
     promise.then(parseResponse);
 }
